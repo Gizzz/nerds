@@ -122,6 +122,9 @@ nav .logo img {
     margin-left: 20px;
     margin-right: 20px;
     height: 57px;
+
+    border-bottom: 2px solid transparent;
+    transition: all .25s;
 }
 
 .header-menu .links a:hover {
@@ -151,6 +154,8 @@ nav .logo img {
     height: 13px;
     background: url("../img/icon-cart.png") no-repeat;
     opacity: 0.3;
+
+    transition: all .25s;
 }
 
 .header-menu .shopping-cart:hover .icon {
@@ -164,7 +169,6 @@ nav .logo img {
 
 .slider .slide {
     display: none;
-
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
