@@ -319,7 +319,7 @@ section.studio {
     background: #fb565a;
     top: 50%;
     margin-top: -1px;
-    left: 0px;
+    left: 0;
 }
 
 section.clients {
@@ -332,35 +332,27 @@ section.clients {
     width: 240px;
     height: 87px;
     text-indent: -9999px;
+    opacity: .2;
+    transition: all .25s;
+}
 
+.clients a:hover {
+    opacity: 1;
+}
+
+.clients a:not(:last-child) {
     margin-right: 80px;
 }
 
-.clients a:last-child {
-    margin-right: 0;
-}
-
 .clients a:nth-child(1) {
-    background: url("../img/client-1.png") no-repeat 50% 50%;
-}
-
-.clients a:nth-child(2) {
-    background: url("../img/client-2.png") no-repeat 50% 50%;
-}
-
-.clients a:nth-child(3) {
-    background: url("../img/client-3.png") no-repeat 50% 50%;
-}
-
-.clients a:nth-child(1):hover {
     background: url("../img/client-1-hover.png") no-repeat 50% 50%;
 }
 
-.clients a:nth-child(2):hover {
+.clients a:nth-child(2) {
     background: url("../img/client-2-hover.png") no-repeat 50% 50%;
 }
 
-.clients a:nth-child(3):hover {
+.clients a:nth-child(3) {
     background: url("../img/client-3-hover.png") no-repeat 50% 50%;
 }
 
