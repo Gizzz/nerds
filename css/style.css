@@ -826,3 +826,34 @@ footer p {
 .popup-write-us input[type=button]:hover {
     background: #d2d2d2;
 }
+
+.scroll-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background: #fff;
+    border-bottom: 2px solid #eee;
+}
+
+.scroll-menu .logo a {
+    color: #000;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 73px;
+    vertical-align: middle;
+}
+
+.scroll-menu .logo b {
+    font-weight: 500;
+}
+
+.scroll-menu .header-menu a {
+    padding-top: 0;
+    line-height: 73px;
+}
+
+.scroll-menu .header-menu .shopping-cart .icon {
+    top: 30px;
+}

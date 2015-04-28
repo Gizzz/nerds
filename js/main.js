@@ -50,5 +50,37 @@ $(function () {
     $(".popup-write-us input[type=submit], .popup-write-us input[type=button]").click(function (e) {
         e.preventDefault();
         $(".popup-write-us").css("display", "none");
-    })
+    });
+
+    // fixed menu
+
+    $(window).scroll(function () {
+        var sizeOfHeader = 436;
+
+        if ($(window).scrollTop() > sizeOfHeader) {
+            $('.scroll-menu').css("display", "block");
+        }
+        else {
+            $('.scroll-menu').css("display", "none");
+        }
+    });
+
+    // scroll to element
+    $("nav a").click(function (e) {
+        e.preventDefault();
+
+        var scrollTopValue;
+        var dest = $(this).attr("href");
+
+        if (dest == "#root") {
+            scrollTopValue = 0;
+        } else {
+            var fixedMenuHeight = 75;
+            scrollTopValue = $(dest).offset().top - fixedMenuHeight
+        }
+
+        $('html, body').animate({
+            scrollTop: scrollTopValue
+        }, 1000);
+    });
 });
