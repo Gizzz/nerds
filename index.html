@@ -1,18 +1,15 @@
 ﻿<!doctype html>
 <html class="no-js" lang="">
     <head>
+        <title>Nerds</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Nerds</title>
         <meta name="description" content="">
 
+        <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:500,100,300,700,400&subset=cyrillic,latin'>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-
-        <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:500,100,300,700,400&subset=cyrillic,latin'>
         <link rel="stylesheet" href="css/style.css">
-
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -180,7 +177,7 @@
                         </div>
                         <div class="right-column">
                             <div class="sorting clearfix">
-                                <span>сортировать:</span> 
+                                <span>сортировать:</span>
                                 <span class="sort-by price">по цене</span>
                                 <span class="sort-by type">по типу</span>
                                 <span class="sort-by functionality desc">по функционалу</span>
@@ -307,21 +304,21 @@
                     </div>
                 </section>
             </div>
+            
             <section class="contacts" id="contacts">
-                <div class="layout-center">
-                    <div class="window">
-                        <div class="title">
-                            <b>NЁRDS</b> DESIGN STUDIO
-                        </div>
-                        <p>
-                            350000, Краснодар, <br />
-                            ул. Головатого, 100
-                        </p>
-                        <p>
-                            тел. +7 (861) 275-75-75
-                        </p>
-                        <button class="btn write-us">напишите нам</button>
+                <div class="map-canvas"></div>
+                <div class="window">
+                    <div class="title">
+                        <b>NЁRDS</b> DESIGN STUDIO
                     </div>
+                    <p>
+                        350000, Краснодар, <br />
+                        ул. Головатого, 100
+                    </p>
+                    <p>
+                        тел. +7 (861) 275-75-75
+                    </p>
+                    <button class="btn write-us">напишите нам</button>
                 </div>
             </section>
         </main>
@@ -398,8 +395,10 @@
             </div>
         </div>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCozG4Lu5FonvLVvClESFsXBA4_e4OL18Y"></script>
+            
+        <script src="js/vendor/jquery-1.11.2.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
     </body>

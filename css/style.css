@@ -701,12 +701,11 @@ section.shop {
 }
 
 section.contacts {
-    background: #e5e5e5 url("../img/bg-map.jpg") no-repeat 50% 50%;
+    position: relative;
 }
 
-.contacts .layout-center {
-    position: relative;
-    padding: 88px 0;
+.contacts .map-canvas {
+    height: 416px;
 }
 
 .contacts .window {
@@ -718,6 +717,11 @@ section.contacts {
     background: white;
     box-shadow: 3px 6px 75px 0 rgba(0,0,0,0.75);
     color: #666666;
+    
+    position: absolute;
+    left: calc(50% - 440px);
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .contacts .window .title {
